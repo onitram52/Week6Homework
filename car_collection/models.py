@@ -90,7 +90,7 @@ class Car(db.Model):
 
 class CarSchema(ma.Schema):
     class Meta:
-        fields = ['id', 'nickname', 'description', 'price', 'color', 'horsepower', 'max_speed', 'dimensions', 'weight', 'cost_of_production', 'make', 'model',]
+        fields = ['id', 'nickname', 'description', 'price', 'color', 'horsepower', 'max_speed', 'dimensions', 'weight', 'cost_of_production', 'make', 'model']
 
 car_schema = CarSchema()
 cars_schema = CarSchema(many=True)

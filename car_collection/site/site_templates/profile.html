@@ -18,13 +18,36 @@
 
 
 <header class="hero-section">
-    <h1 class="header-text">Welcome to the Car Collection, {{ current_user.email }}</h1>
+    <h3 class="header-text">Welcome to Coding Drones, {{ current_user.email }}</h3>
+
+    <main class="container drone_form">
+        <div class="row">
+            <aside class="col-12 col-md-6">
+                <h2>Create a Car</h2>
+                {% include 'car_form.html' %}
+            </aside>
+        </div>
+    </main>
 </header>
 
 <div class="container">
     <h3>Here are your profile details:</h3>
     <li class="list-group-item">Email: {{ current_user.email }}</li>
     <li class="list-group-item">Token: {{ current_user.token }}</li>
+    <div class="row">
+        {% for car in cars %}
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://tenor.com/bUmvi.gif" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ car.name }}</h5>
+                <p class="card-text">{{ car.description }}</p>
+                <p>${{ car.price }}</p>
+            </div>     
+            </div>    
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
 

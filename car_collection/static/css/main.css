@@ -86,7 +86,7 @@ ul#horizontal-list a:nth-last-child(1) {
 }
 
 .hero-section {
-    height: 95vh;
+    height: 1000px;
     background-image:linear-gradient(to right bottom, rgba(30, 115,172, 0.7), rgba(142, 57, 153, 0.6)), url();
     background-size: cover;
     background-position: 35% 50%;
@@ -98,8 +98,14 @@ ul#horizontal-list a:nth-last-child(1) {
 .header-text {
     display: flex;
     justify-content: center;
-    padding-top: 20%;
+    padding-top: 2%;
     left: 20rem;
     top: 10rem;
+    color: white;
+}
+
+.car_form{
+    padding-top: 2%;
+    padding-bottom: 2%;
     color: white;
 }

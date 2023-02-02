@@ -1,0 +1,53 @@
+<form method = "POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="nickname-field">
+        {{ form.nickname.label }}
+        {{ form.nickname(class = "form-control", placeholder = "Nickname") }}
+        </fieldset>
+        <fieldset id="description-field">
+        {{ form.description.label }}
+        {{ form.description(class = "form-control", placeholder = "Description") }}
+        </fieldset>
+        <fieldset id="price-field">
+        {{ form.price.label }}
+        {{ form.price(class = "form-control", placeholder = "Price") }}
+        </fieldset>
+        <fieldset id="color-field">
+        {{ form.color.label }}
+        {{ form.color(class = "form-control", placeholder = "Color") }}
+        </fieldset>
+        <fieldset id="horse-field">
+        {{ form.horsepower.label }}
+        {{ form.horsepower(class = "form-control", placeholder = "Horse Power") }}
+        </fieldset>
+        <fieldset id="max-field">
+        {{ form.max_speed.label }}
+        {{ form.max_speed(class = "form-control", placeholder = "Max Speed") }}
+        </fieldset>
+        <fieldset id="dimensions-field">
+        {{ form.dimensions.label }}
+        {{ form.dimensions(class = "form-control", placeholder = "Dimensions") }}
+        </fieldset>
+        <fieldset id="weight-field">
+        {{ form.weight.label }}
+        {{ form.weight(class = "form-control", placeholder = "Weight") }}
+        </fieldset>
+        <fieldset id="cop-field">
+        {{ form.cost_of_production.label }}
+        {{ form.cost_of_production(class = "form-control", placeholder = "Cost of Production") }}
+        </fieldset>
+        <fieldset id="make-field">
+        {{ form.make.label }}
+        {{ form.make(class = "form-control", placeholder = "Make") }}
+        </fieldset>
+        <fieldset id="model-field">
+        {{ form.model.label }}
+        {{ form.model(class = "form-control", placeholder = "Model") }}
+        </fieldset>
+
+        <!-- Submit Area Button -->
+        {{ form.submit_button(class = "btn btn-primary btn-block") }}
+
+    </div>
+</form>
