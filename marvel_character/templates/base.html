@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../static/css/main.css">
+<title>Marvel Character API</title>
+</head>
+<body>
+
+    <nav class="ct-nav">
+        <div>
+            <img src="data:image/png;base64,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" alt="marvel logo">
+        </div>
+
+    <div>
+        <ul id="horizontal-list">  
+            <a href="{{ url_for('site.home') }}">
+                <li>The Marvel Character API</li>
+            </a>
+            <a href="{{ url_for('site.home') }}">
+                <li>Donate</li>
+            </a>
+
+            {% if current_user.is_authenticated %}
+
+            <a href="{{ url_for('site.profile') }}">
+                <li>Profile</li>
+            </a>
+            <a href="{{ url_for('auth.logout') }}">
+                <li>Log Out</li>
+            </a>
+
+            {% else %}
+
+            <a href="{{ url_for('auth.signin') }}">
+                <li>Sign In</li>
+            </a>
+            <a href="{{ url_for('auth.signup') }}">
+                <li>Sign Up Free</li>
+            </a>
+            
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+    <!--End of NavBar-->
+
+
+
+<!-- Create space for content from othe html pages-->
+{% block content %}
+
+{% endblock content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

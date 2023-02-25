@@ -3,7 +3,7 @@
     <div class="form-group">
         <fieldset id="email-field">
         {{ form.email.label }}
-        {{ form.email(class = "form-control", placeholder = "Place Email Here!") }}
+        {{ form.email(class = "form-control", placeholder = "Email") }}
         </fieldset>
         <fieldset id="first-field">
             {{ form.first_name.label }}
@@ -18,7 +18,6 @@
             {{ form.password(class = "form-control", placeholder = "Password") }}
         </fieldset>
 
-        <!-- submit area button-->
         {{ form.submit_button(class = "btn btn-primary btn-block") }}
     </div>
 </form>

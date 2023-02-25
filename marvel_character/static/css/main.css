@@ -62,7 +62,7 @@ ul#horizontal-list a:nth-last-child(1) {
 }
 /* End of Features Section */
 /* Start of Community Section */
-#Car-image{
+#Character-image{
     width: 50%;
     max-width: 75%;
     margin-left: 3vw;
@@ -104,7 +104,7 @@ ul#horizontal-list a:nth-last-child(1) {
     color: white;
 }
 
-.car_form{
+.character_form{
     padding-top: 2%;
     padding-bottom: 2%;
     color: white;

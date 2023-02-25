@@ -1,12 +1,8 @@
 from functools import wraps
-
 import secrets
 from flask import request, jsonify, json
-
-from car_collection.models import User
-
+from marvel_character.models import User
 import decimal
-
 import requests
 
 def token_required(our_flask_function):

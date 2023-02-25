@@ -5,7 +5,7 @@ from .authentication.routes import auth
 from .api.routes import api
 from .models import db as root_db, login_manager, ma
 from flask_migrate import Migrate
-from car_collection.helpers import JSONEncoder
+from marvel_character.helpers import JSONEncoder
 
 from flask_cors import CORS
 

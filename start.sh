@@ -1,1 +1,1 @@
-gunicorn "car_collection:app"
+gunicorn "character_collection:app"
